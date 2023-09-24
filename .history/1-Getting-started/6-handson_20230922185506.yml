@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: A sample template to create EC2 
+Resources:
+  MyEC2Instance1:
+    Type: "AWS::EC2::Instance"
+    Properties: 
+      ImageId: "ami-03a6eaae9938c858c"
+      InstanceType: t2.micro      
+      BlockDeviceMappings:
+        -
+          DeviceName: /dev/xvda
+          Ebs:
+            VolumeType: gp2            
+            DeleteOnTermination: true
+            VolumeSize: 8
+  MyEC2Instance2:
+    Type: "AWS::EC2::Instance"
+    Properties: 
+      ImageId: "ami-03a6eaae9938c858c"
+      InstanceType: t2.micro      
+      BlockDeviceMappings:
+        -
+          DeviceName: /dev/xvda
+          Ebs:
+            VolumeType: gp2            
+            DeleteOnTermination: true
+            VolumeSize: 8
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: abayflo1-bucket

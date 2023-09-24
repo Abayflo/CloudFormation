@@ -3,6 +3,7 @@
 # Use of the of the intrinsic function !Ref
 # Ref: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
 
+---
 AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template
 
