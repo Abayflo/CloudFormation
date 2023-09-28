@@ -40,7 +40,8 @@ Parameters:
   S3bucketname:
     Description: The name of the S3 bucket
     Type: String
- 
+    
+
 
 Resources:
   Webserver:
