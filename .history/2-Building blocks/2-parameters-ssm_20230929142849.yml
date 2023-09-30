@@ -20,7 +20,7 @@ Parameters:
   AMIID:
     Description: The EC2 AMI id
     Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
-    Default: '/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2'
+    Default:      
     ConstraintDescription: Must be a valid AMI based on the region
 
   VolumeSize:
